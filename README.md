@@ -54,6 +54,7 @@ endmodule
 ## D Flip-Flop
 D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
 This circuit has single input D and two outputs Qtt & Qtt’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable. The following table shows the state table of D flip-flop.
+
 ![image](https://github.com/MALENIMURUGAN/Experiment--05-Implementation-of-flipflops-using-verilog/assets/144870675/8c46c8f2-18ca-4bb3-9663-f59df1ca5d4d)
 ![image](https://github.com/MALENIMURUGAN/Experiment--05-Implementation-of-flipflops-using-verilog/assets/144870675/601f6e50-d3e0-41f1-b780-55e18af66e7d)
 
