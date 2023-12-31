@@ -29,7 +29,8 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 ## PROGRAM:
 ```
-module sr(S,R,clk,Q,Qbar);	                                                input S,R,clk;
+module sr(S,R,clk,Q,Qbar);
+input S,R,clk;
 output reg Q;
 output reg Qbar; 
 initial Q=0;
@@ -64,7 +65,8 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 ## PROGRAM:
 ```
-module d(d,clk,q,qbar);	                                                   input d,clk;
+module d(d,clk,q,qbar);
+input d,clk;
 output q,qbar;
 reg q,qbar;
 always @(posedge clk)
@@ -102,7 +104,8 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 ## PROGRAM:
 ```
-module jk(J,K,clk,Q,Qbar);	                                                input J,K,clk;
+module jk(J,K,clk,Q,Qbar);
+input J,K,clk;
 output reg Q;
 output reg Qbar;
 initial Q=0;
@@ -139,7 +142,8 @@ From the above characteristic table, we can directly write the next state equati
  
 ## PROGRAM:
 ```
-module t(clk,T,q,qbar);	                                                   input clk,T;
+module t(clk,T,q,qbar);
+input clk,T;
 output q,qbar; reg q,qbar;
 always @(posedge clk)
 begin q=(T&~q)|(~T&q); qbar=~q;
